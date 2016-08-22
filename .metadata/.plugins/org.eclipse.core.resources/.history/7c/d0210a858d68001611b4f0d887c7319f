@@ -1,0 +1,6 @@
+package org.anveshgadde.mutlithreading.threadrunnable;
+
+public class ThreadRunnable extends Thread implements Runnable{
+	
+	
+}
