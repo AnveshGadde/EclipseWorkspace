@@ -1,0 +1,49 @@
+/**
+ * 
+ */
+package org.anveshgadde.sql;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.util.ArrayList;
+
+/**
+ * @author anveshg
+ *
+ */
+public final class Query {
+
+	private Object[] headers;
+	private Object[][] data;
+	private final String query;
+	private final Connection connection;
+
+	public Query(Connection connection, String query) {
+		// TODO Auto-generated constructor stub
+
+		this.query = query;
+		this.connection = connection;
+
+		getQueryResults();
+	}
+
+	public Object[] getHeaders() {
+		return this.headers;
+	}
+
+	public Object[][] getData() {
+		return this.data;
+	}
+
+	private void getQueryResults() {
+
+		Statement stmt = null;
+		ResultSet rs;
+
+		ArrayList<Object> tempTable = new ArrayList<>();
+
+		ArrayList<Object> tempRow;
+
+	}
+}

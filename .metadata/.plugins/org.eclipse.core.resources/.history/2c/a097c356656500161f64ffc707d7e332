@@ -1,0 +1,32 @@
+/**
+ * 
+ */
+package org.anveshgadde.sql;
+
+/**
+ * @author anveshg
+ *
+ */
+public class ClipboardTextTransfer {
+
+	public static void main(String[] args) {
+		ClipboardTextTransfer textTransfer = new ClipboardTextTransfer();
+
+		System.out.println("Clipboard contains: " + textTransfer.getClipboardContents());
+
+		textTransfer.setClipboardContents("display", "has", "changed");
+		System.out.println("Clipboard contains: " + textTransfer.getClipboardContents());
+
+	}
+
+	private void setClipboardContents(String string, String string2, String string3) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public String getClipboardContents() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

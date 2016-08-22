@@ -1,0 +1,24 @@
+/**
+ * 
+ */
+package org.anveshgadde.stringmethods;
+
+/**
+ * @author anveshg
+ *
+ */
+public class MethodsString {
+
+	public static void main(String[] args) {
+
+		String myName = "AnveshGadde";
+
+		String myNumber = "125";
+
+		System.out.println("String char index method: " + myName.charAt(4));
+		System.out.println("String myName length: " + myName.length());
+		System.out.println("String myNumber length: " +myNumber.length());
+
+	}
+
+}

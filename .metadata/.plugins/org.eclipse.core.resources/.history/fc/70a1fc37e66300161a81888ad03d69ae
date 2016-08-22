@@ -1,0 +1,19 @@
+/**
+ * 
+ */
+package org.anveshgadde.wrapperimplementation;
+
+/**
+ * @author anveshg
+ *
+ */
+public class WrapperImpl {
+	
+	public static void main(String[] args) {
+		
+		Integer inte = new Integer(33);
+		
+		int myInt = inte.intValue();
+	}
+
+}

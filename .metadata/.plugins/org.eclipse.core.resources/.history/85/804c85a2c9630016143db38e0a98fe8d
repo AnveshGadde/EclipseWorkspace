@@ -1,0 +1,19 @@
+/**
+ * 
+ */
+package org.anveshgadde.interfaceimplementable;
+
+/**
+ * @author anveshg
+ *
+ */
+
+interface Print{
+	
+}
+
+
+
+public class SearchInstance {
+
+}

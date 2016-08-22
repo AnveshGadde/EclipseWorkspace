@@ -1,0 +1,35 @@
+/**
+ * 
+ */
+package org.anveshgadde.stringmethods;
+
+import java.util.Locale;
+
+/**
+ * @author anveshg
+ *
+ */
+public class MethodsString {
+
+	public static void main(String[] args) {
+
+		String myName = "AnveshGadde";
+
+		String myNumber = "125";
+
+		//char index method
+		System.out.println("String char index method: " + myName.charAt(4));
+		
+		//length method
+		System.out.println("String myName length: " + myName.length());
+		System.out.println("String myNumber length: " + myNumber.length());
+		
+		//Formatted string
+		System.out.println("String myName formatted: " +String.format("%1s", myNumber));
+		System.out.println("String myName formatted locale: " +String.format(Locale.ITALIAN, "%1s", myNumber));
+		
+		
+
+	}
+
+}

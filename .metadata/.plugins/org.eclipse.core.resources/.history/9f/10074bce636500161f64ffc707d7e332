@@ -1,0 +1,9 @@
+package org.anveshgadde.sql;
+
+import java.util.Properties;
+
+public class ClipBoardMain {
+	
+	final Properties properties = new Properties();
+
+}

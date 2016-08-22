@@ -1,0 +1,23 @@
+package org.anveshgadde.instanceofoperator;
+
+class Printer {
+
+	private String printMessage;
+	
+	Printer(String printMessage) {
+		this.printMessage = printMessage;
+	}
+
+}
+
+public class SearchInstance extends Printer {
+	public static void main(String[] args) {
+
+		Printer print = new Printer();
+		
+		if(print instanceof SearchInstance){
+
+		}
+	}
+
+}

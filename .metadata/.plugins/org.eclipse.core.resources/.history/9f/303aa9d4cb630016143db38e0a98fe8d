@@ -1,0 +1,13 @@
+/**
+ * 
+ */
+package org.anveshgadde.interfaceimplementable;
+
+/**
+ * @author anveshg
+ *
+ */
+
+interface Print {
+	void print();
+}

@@ -1,0 +1,50 @@
+/**
+ * 
+ */
+package org.anveshgadde.sql;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.sql.Connection;
+import java.util.Properties;
+
+/**
+ * @author anveshg
+ *
+ */
+public class DBConnection {
+	
+	Properties prop = new Properties();
+
+
+	public DBConnection(String propFilePath) throws FileNotFoundException, IOException {
+		// TODO Auto-generated constructor stub
+		
+		prop.load(new FileInputStream(propFilePath));
+	}
+	
+	public static Connection connectDB(Environment environment){
+		Connection connection = null;
+		
+		switch(environment){
+		case DIT:
+			connection = DBConnection.getProdRPTOracle();
+			break;
+			
+		case SIT:
+			connection = DBConnection.getProdRPTOracle();
+			break;
+		}
+		
+		return null;
+		
+	}
+	
+
+	public static Connection getProdRPTOracle() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

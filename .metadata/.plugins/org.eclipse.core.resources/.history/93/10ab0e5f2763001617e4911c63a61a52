@@ -1,0 +1,11 @@
+package org.anveshgadde.multilevelinheritance;
+
+class Toss {
+	void tossFlip() {
+		System.out.println();
+	}
+}
+
+public class Cricket {
+
+}

@@ -1,0 +1,22 @@
+/**
+ * 
+ */
+package org.anveshgadde.mutableandimmutable;
+
+/**
+ * @author anveshg
+ *
+ */
+public class Mutation {
+
+	public static void main(String[] args) {
+
+		String myName = "Avnesh";
+
+		String myNewName = "Gadde";
+
+		System.out.println(myName.concat("kumar") + " " + myNewName);
+
+	}
+
+}

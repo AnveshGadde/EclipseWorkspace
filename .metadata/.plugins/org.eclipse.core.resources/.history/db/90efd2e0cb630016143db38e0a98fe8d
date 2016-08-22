@@ -1,0 +1,15 @@
+/**
+ * 
+ */
+package org.anveshgadde.interfaceimplementable;
+
+/**
+ * @author anveshg
+ *
+ */
+
+interface Print {
+	void printCricket();
+	void printFootball();
+}
+

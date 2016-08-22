@@ -1,0 +1,5 @@
+package org.anveshgadde.decryptionfunction;
+
+public enum EncryptionParameters {
+
+}

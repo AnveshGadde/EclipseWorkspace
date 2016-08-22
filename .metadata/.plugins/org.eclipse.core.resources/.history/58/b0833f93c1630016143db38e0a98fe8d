@@ -1,0 +1,10 @@
+package org.anveshgadde.instanceofoperator;
+
+class Printer{
+	System.out.println("Parent method printed");
+}
+
+public class SearchInstance {
+
+	
+}

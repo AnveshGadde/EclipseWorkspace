@@ -1,0 +1,16 @@
+package org.anveshgadde.accessmodifiers;
+
+class normalModify{
+	@SuppressWarnings("unused")
+	private String name;
+	
+	normalModify(String name){
+		this.name = name;
+	}
+}
+
+public class Modifiers {
+	
+	
+
+}

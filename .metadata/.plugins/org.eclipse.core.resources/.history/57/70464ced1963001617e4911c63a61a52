@@ -1,0 +1,8 @@
+package org.anveshgadde.decryptionfunction;
+
+public class EncryptionParameters {
+	
+	private final String token, algorithm;
+	
+
+}

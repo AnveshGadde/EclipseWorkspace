@@ -1,0 +1,6 @@
+package org.anveshgadde.sql;
+
+public enum Environment {
+	SIT, DIT, PROD
+
+}

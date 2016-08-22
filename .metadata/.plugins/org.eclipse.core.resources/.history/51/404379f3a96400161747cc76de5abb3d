@@ -1,0 +1,18 @@
+/**
+ * 
+ */
+package org.anveshgadde.regularexpression;
+
+import java.util.regex.*;
+
+/**
+ * @author anveshg
+ *
+ */
+public class RegularExpression {
+	
+	public static void main(String[] args) {
+		boolean p = p.compile("*s*").matcher("anvesh").matches();
+	}
+
+}

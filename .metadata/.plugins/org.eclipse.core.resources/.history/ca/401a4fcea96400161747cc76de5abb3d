@@ -1,0 +1,18 @@
+/**
+ * 
+ */
+package org.anveshgadde.regularexpression;
+
+import java.util.regex.Pattern;
+
+/**
+ * @author anveshg
+ *
+ */
+public class RegularExpression {
+	
+	public static void main(String[] args) {
+		Pattern p = p.compile("*s*");
+	}
+
+}

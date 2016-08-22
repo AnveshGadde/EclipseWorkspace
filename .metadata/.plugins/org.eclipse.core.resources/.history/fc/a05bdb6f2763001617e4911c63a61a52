@@ -1,0 +1,21 @@
+package org.anveshgadde.multilevelinheritance;
+
+class Toss {
+	void tossFlip() {
+		System.out.println("Toss in the air!");
+	}
+}
+
+class Batting extends Toss {
+	void tossFlip() {
+		System.out.println("Captain calls for Heads and chose batting");
+	}
+}
+
+class Bowling extends Toss {
+	
+}
+
+public class Cricket {
+
+}

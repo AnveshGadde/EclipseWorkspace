@@ -1,0 +1,89 @@
+/**
+ * 
+ */
+package org.anveshgadde.sql;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.ResultSetMetaData;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+
+/**
+ * @author anveshg
+ *
+ */
+public final class Query {
+
+	private Object[] headers;
+	private Object[][] data;
+	private final String query;
+	private final Connection connection;
+
+	public Query(Connection connection, String query) {
+		// TODO Auto-generated constructor stub
+
+		this.query = query;
+		this.connection = connection;
+
+		getQueryResults();
+	}
+
+	public Object[] getHeaders() {
+		return this.headers;
+	}
+
+	public Object[][] getData() {
+		return this.data;
+	}
+
+	private void getQueryResults() {
+
+		Statement stmt = null;
+		ResultSet rs;
+
+		ArrayList<Object> tempTable = new ArrayList<>();
+
+		ArrayList<Object> tempRow;
+
+		try {
+			stmt = connection.createStatement();
+
+			rs = stmt.executeQuery(query);
+
+			ResultSetMetaData rsmd = rs.getMetaData();
+
+			int columnCount = rsmd.getColumnCount();
+
+			headers = new String[columnCount];
+
+			for (int i = 1; i < columnCount; i++) {
+
+				String name = rsmd.getColumnName(i);
+				headers[i - 1] = name;
+			}
+
+			int row = 0;
+
+			while (rs.next()) {
+				tempRow = new ArrayList<>();
+
+				for (int i = 0; i < columnCount; i++) {
+
+					String r = rs.getString(i + 1);
+					tempRow.add(r);
+				}
+				
+				row++;
+				
+				tempTable.add(tempRow);
+			}
+
+		} catch (SQLException e) {
+
+			e.printStackTrace();
+		}
+
+	}
+}

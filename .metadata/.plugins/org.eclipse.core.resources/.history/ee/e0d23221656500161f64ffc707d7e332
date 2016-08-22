@@ -1,0 +1,22 @@
+/**
+ * 
+ */
+package org.anveshgadde.sql;
+
+/**
+ * @author anveshg
+ *
+ */
+public class ClipboardTextTransfer {
+
+	public static void main(String[] args) {
+		ClipboardTextTransfer textTransfer = new ClipboardTextTransfer();
+
+	}
+
+	public String getClipboardContents() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

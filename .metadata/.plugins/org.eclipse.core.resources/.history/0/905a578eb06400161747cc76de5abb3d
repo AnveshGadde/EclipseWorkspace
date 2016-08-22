@@ -1,0 +1,23 @@
+/**
+ * 
+ */
+package org.anveshgadde.exceptionhandled;
+
+/**
+ * @author anveshg
+ *
+ */
+public class ExceptionTry {
+
+	public static void main(String[] args) {
+
+		int i;
+		
+		try{
+			System.out.println("Div value: " + i/0);
+		}catch{
+			
+		}
+	}
+
+}

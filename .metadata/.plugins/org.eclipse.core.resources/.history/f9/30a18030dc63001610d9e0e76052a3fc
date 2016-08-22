@@ -1,0 +1,25 @@
+package org.anveshgadde.accessmodifiers;
+
+class normalModify {
+	@SuppressWarnings("unused")
+	private String name;
+
+	protected normalModify(String name) {
+		this.name = name;
+
+		System.out.println("Name entered is: " + name);
+	}
+}
+
+public class Modifiers extends normalModify{
+	protected Modifiers(String name) {
+		super(name);
+	}
+	
+	public static void main(String[] args) {
+		
+		normalModify mod = new Modifiers();
+
+	}
+
+}

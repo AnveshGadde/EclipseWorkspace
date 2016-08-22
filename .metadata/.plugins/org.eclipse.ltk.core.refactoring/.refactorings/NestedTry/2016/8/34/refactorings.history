@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Inline local variable &apos;org.anveshgadde.nestedtryblocks.NestedTry.main().b&apos; in &apos;org.anveshgadde.nestedtryblocks.NestedTry.main()&apos;&#x0D;&#x0A;- Original project: &apos;NestedTry&apos;&#x0D;&#x0A;- Original element: &apos;org.anveshgadde.nestedtryblocks.NestedTry.main().b&apos;" description="Inline local variable &apos;b&apos;" id="org.eclipse.jdt.ui.inline.temp" input="/src&lt;org.anveshgadde.nestedtryblocks{NestedTry.java" selection="250 10" stamp="1471527954982" version="1.0"/>
+</session>

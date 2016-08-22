@@ -1,0 +1,27 @@
+package org.anveshgadde.accessmodifiers;
+
+class normalModify {
+	private String name;
+
+	protected normalModify(String name) {
+		this.name = name;
+	}
+
+	private void displayInfo() {
+		System.out.println("Name entered is: " + name);
+	}
+}
+
+public class Modifiers extends normalModify {
+	protected Modifiers(String name) {
+		super(name);
+	}
+
+	public static void main(String[] args) {
+		final String name = null;
+
+		normalModify mod = new Modifiers(name);
+
+	}
+
+}

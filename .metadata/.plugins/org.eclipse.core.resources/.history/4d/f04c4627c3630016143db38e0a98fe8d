@@ -1,0 +1,50 @@
+package org.anveshgadde.instanceofoperator;
+
+import java.util.Scanner;
+
+class Printer {
+
+	private String printMessage;
+
+	Printer() {
+		this.setPrintMessage(printMessage);
+	}
+
+	/**
+	 * @return the printMessage
+	 */
+	public String getPrintMessage() {
+		return printMessage;
+	}
+
+	/**
+	 * @param printMessage
+	 *            the printMessage to set
+	 */
+	public void setPrintMessage(String printMessage) {
+		this.printMessage = printMessage;
+	}
+
+	public void doPrint() {
+		System.out.println("Message being printed: " +printMessage);
+	}
+
+}
+
+public class SearchInstance extends Printer {
+
+	public static void main(String[] args) {
+
+		Scanner scan = new Scanner(System.in);
+		String message = scan.nextLine();
+		
+		scan.close();
+		
+		Printer print = new Printer();
+
+		if (print instanceof SearchInstance) {
+			print.doPrint();
+		}
+	}
+
+}

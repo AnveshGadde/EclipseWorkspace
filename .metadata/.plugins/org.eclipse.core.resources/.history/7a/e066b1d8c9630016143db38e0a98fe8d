@@ -1,0 +1,27 @@
+/**
+ * 
+ */
+package org.anveshgadde.interfaceimplementable;
+
+/**
+ * @author anveshg
+ *
+ */
+
+interface Print {
+	void print();
+}
+
+interface ShowPrint {
+	void print();
+}
+
+public class SearchInstance implements Print, ShowPrint{
+
+	public static void main(String[] args) {
+		
+		SearchInstance si = new SearchInstance();
+
+	}
+
+}

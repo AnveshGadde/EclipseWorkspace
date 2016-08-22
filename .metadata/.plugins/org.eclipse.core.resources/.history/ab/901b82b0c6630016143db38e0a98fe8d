@@ -1,0 +1,14 @@
+package org.anveshgadde.abstractclassimplement;
+
+abstract class MetDes {
+	abstract void calc();
+}
+
+public class AbsMetImpl extends MetDes {
+
+	@Override
+	void calc() {
+		System.out.println("Calculated value!");
+	}
+
+}
