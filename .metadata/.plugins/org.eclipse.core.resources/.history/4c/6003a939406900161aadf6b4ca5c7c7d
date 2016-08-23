@@ -1,0 +1,16 @@
+/**
+ * 
+ */
+package org.anveshgadde.sequenceiostream;
+
+import java.io.FileInputStream;
+
+/**
+ * @author anveshg
+ *
+ */
+public class SequenceIOStream {
+	
+	FileInputStream fis1 = new FileInputStream("C:/Users/anveshg/Desktop/GenericUDTFJSONTuple.java");
+
+}

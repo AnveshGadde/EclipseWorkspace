@@ -1,0 +1,22 @@
+/**
+ * 
+ */
+package org.anveshgadde.socketprogramming;
+
+/**
+ * @author anveshg
+ *
+ */
+public class MyServer {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		ServerSocket ss = new ServerSocket(6666);
+
+	}
+
+}

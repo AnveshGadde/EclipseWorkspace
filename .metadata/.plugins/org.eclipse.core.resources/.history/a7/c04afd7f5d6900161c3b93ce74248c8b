@@ -1,0 +1,13 @@
+package org.anveshgadde.serializationanddeserialization;
+
+import java.io.Serializable;
+
+class Imple implements Serializable{
+	
+	
+
+}
+
+public class Series{
+	
+}

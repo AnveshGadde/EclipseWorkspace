@@ -1,0 +1,27 @@
+/**
+ * 
+ */
+package org.anveshgadde.socketprogramming;
+
+import java.io.IOException;
+import java.net.Socket;
+
+/**
+ * @author anveshg
+ *
+ */
+public class MyClient {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		try {
+			Socket s = new Socket("localhost", 6666);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+}

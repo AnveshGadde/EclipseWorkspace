@@ -1,0 +1,21 @@
+/**
+ * 
+ */
+package org.anveshgadde.socketprogramming;
+
+/**
+ * @author anveshg
+ *
+ */
+public class MyClient {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		Socket s = new Socket("localhost", 6666);
+
+	}
+
+}

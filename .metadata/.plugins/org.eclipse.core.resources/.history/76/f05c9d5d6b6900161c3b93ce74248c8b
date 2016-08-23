@@ -1,0 +1,26 @@
+/**
+ * 
+ */
+package org.anveshgadde.urlconneciton;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+
+/**
+ * @author anveshg
+ *
+ */
+public class URLConn {
+
+	public static void main(String[] args) {
+		
+		try {
+			URL url = new URL("http://www.javatpoint.com/java-tutorial");
+		} catch (MalformedURLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+
+}

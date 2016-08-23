@@ -1,0 +1,9 @@
+package org.anveshgadde.serializationanddeserialization;
+
+import java.io.Serializable;
+
+public class Series implements Serializable{
+	
+	
+
+}

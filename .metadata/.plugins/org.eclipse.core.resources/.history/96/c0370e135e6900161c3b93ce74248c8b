@@ -1,0 +1,37 @@
+package org.anveshgadde.serializationanddeserialization;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
+
+class Imple implements Serializable {
+
+	private final static String name = "Anvesh";
+	private final static int age = 27;
+	private final static double Id = 515;
+
+	public static String getName() {
+		return name;
+	}
+
+	public static int getAge() {
+		return age;
+	}
+
+	public static double getId() {
+		return Id;
+	}
+
+}
+
+public class Series {
+	
+	public static void main(String[] args) throws Exception {
+		FileOutputStream fos = new FileOutputStream("C:\\Users\\anveshg\\Desktop\\Rev.txt");
+		ObjectOutputStream oos = new ObjectOutputStream(fos);
+		
+		oos.writeObject(fos);
+	}
+
+}

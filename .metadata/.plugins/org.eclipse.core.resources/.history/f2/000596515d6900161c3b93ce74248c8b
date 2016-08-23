@@ -1,0 +1,5 @@
+package org.anveshgadde.serializationanddeserialization;
+
+public class Series extends Serializable{
+
+}

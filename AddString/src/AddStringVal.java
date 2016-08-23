@@ -1,7 +1,8 @@
+import java.io.IOException;
 
 public class AddStringVal {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 
 		String a = "jklmn489pjro635ops";
 
@@ -25,6 +26,10 @@ public class AddStringVal {
 		} catch (NumberFormatException ex) {
 			result = "Invalid input";
 		}
+		
+		int readIn = System.in.read();
+		
+		System.out.println("Value: " +(char)readIn);
 
 		System.out.println("ResultVal: " + result);
 	}

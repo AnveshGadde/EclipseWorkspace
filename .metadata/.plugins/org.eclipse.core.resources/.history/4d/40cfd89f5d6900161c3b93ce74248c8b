@@ -1,0 +1,14 @@
+package org.anveshgadde.serializationanddeserialization;
+
+import java.io.Serializable;
+
+class Imple implements Serializable{
+	
+	private final static String name = "Anvesh";
+	private final static int age = 27;
+	
+}
+
+public class Series{
+	
+}
