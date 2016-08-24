@@ -1,0 +1,15 @@
+/**
+ * 
+ */
+package org.anveshgadde.inputreverse;
+
+/**
+ * @author anveshg
+ *
+ */
+public class InputEntry {
+	
+	private String revString;
+	private int revInt;
+
+}

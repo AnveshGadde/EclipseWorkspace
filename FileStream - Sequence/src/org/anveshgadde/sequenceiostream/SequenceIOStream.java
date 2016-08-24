@@ -21,7 +21,7 @@ public class SequenceIOStream {
 			FileInputStream fis1, fis2;
 			fis1 = new FileInputStream("C:\\Users\\anveshg\\Desktop\\f1.txt");
 			fis2 = new FileInputStream("C:\\Users\\anveshg\\Desktop\\f2.txt");
-			
+
 			FileOutputStream fout = new FileOutputStream("C:\\Users\\anveshg\\Desktop\\f2.txt");
 
 			SequenceInputStream sis = new SequenceInputStream(fis1, fis2);
@@ -34,6 +34,7 @@ public class SequenceIOStream {
 			fis1.close();
 			fis2.close();
 			sis.close();
+			fout.close();
 
 		} catch (IOException e) {
 			// TODO Auto-generated catch block

@@ -1,0 +1,37 @@
+package org.anveshgadde.inputreverse;
+
+import java.io.Console;
+import java.util.Scanner;
+
+/**
+ * @author anveshg
+ *
+ */
+
+public class ReverseInput {
+	public static void main(String[] args) {
+
+		System.out.print("Enter the type of variable to be reversed: "); //
+		Scanner scan = new Scanner(System.in);
+		char check = scan.nextLine().charAt(0);
+
+		StringBuilder sbr = null;
+
+		if (check == 's') {
+			System.out.println("Enter the string to be reversed: ");
+			String str = scan.nextLine();
+
+			sbr = sbr.append(str).reverse();
+			System.out.println("Reversed string value: " + sbr.toString());
+		} else if (check == 'i') {
+			System.out.println("Enter the integer to be reversed: ");
+			int revInt = scan.nextInt();
+
+			sbr = sbr.append(revInt).reverse();
+			System.out.println("Reversed integer value: " + sbr);
+
+		}
+
+	}
+
+}
