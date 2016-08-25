@@ -1,0 +1,41 @@
+/**
+ * 
+ */
+package org.anveshgadde.recursion;
+
+import java.util.Scanner;
+
+/**
+ * @author anveshg
+ *
+ */
+public class RecursivePrg {
+
+	public static void main(String[] args) {
+
+		System.out.println("Enter the number for Factorial: ");
+
+		Scanner scan = new Scanner(System.in);
+		int factNum = scan.nextInt();
+
+		Factorial(factNum);
+
+		scan.close();
+	}
+
+	private static void Factorial(int factNum) {
+		// TODO Auto-generated method stub
+		
+		int factResult = 1;
+
+		factResult *= factNum;
+
+		if (factNum == 1) {
+			System.out.println("Factorial value is: " +factResult);
+			return;
+		}
+
+		Factorial(factNum - 1);
+	}
+
+}
