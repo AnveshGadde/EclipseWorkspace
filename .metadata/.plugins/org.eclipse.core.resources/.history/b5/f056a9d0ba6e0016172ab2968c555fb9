@@ -1,0 +1,20 @@
+package org.anveshgadde.listiterator;
+
+import java.util.ArrayList;
+
+public class ListItrImple {
+
+	public static void main(String[] args) {
+
+		ArrayList<String> al = new ArrayList<>();
+
+		al.add("Anvesh");
+		al.add(1, "Num 2 virtually First!");
+		al.add("Kumar");
+		al.add("Gadde");
+
+		System.out.println("ArrayList is : " + al);
+
+	}
+
+}

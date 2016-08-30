@@ -1,0 +1,18 @@
+package org.anveshgadde.date;
+
+public class DisplayDate {
+
+	public static void main(String[] args) {
+
+		java.util.Date date = new java.util.Date();
+
+		System.out.println("Date from java.util.date: " + date);
+
+		long millis = System.currentTimeMillis();
+		java.sql.Date date2 = new java.sql.Date(millis);
+
+		System.out.println("Date from java.sql.Date: " + date2);
+
+	}
+
+}

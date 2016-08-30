@@ -1,8 +1,0 @@
-package org.anveshgadde.mutlithreading.threadrunnable;
-
-public class ThreadRunnable extends Thread implements Runnable {
-	public static void main(String[] args) {
-
-	}
-
-}

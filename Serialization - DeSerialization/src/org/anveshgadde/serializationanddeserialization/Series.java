@@ -5,6 +5,7 @@ import java.io.FileOutputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
+import java.util.Scanner;
 
 class Imple implements Serializable {
 
@@ -12,46 +13,62 @@ class Imple implements Serializable {
 	 * 
 	 */
 	private static final long serialVersionUID = -2300064735847550805L;
-	private final static String name = "Anvesh";
-	private final static int age = 27;
-	private final static double Id = 515;
+	String name;
+	int age;
+	transient double Id = 534;
 
-	public String getName() {
-		return name;
+	public Imple(String name, int age) {
+		this.name = name;
+		this.age = age;
 	}
 
-	public int getAge() {
-		return age;
+	public void display() {
+		System.out.println("Name: " + name + "; Age: " + age + "; Id: " + Id);
 	}
-
-	public double getId() {
-		return Id;
-	}
-
 }
 
 public class Series {
 
 	public static void main(String[] args) throws Exception {
 
-		Imple imple = new Imple();
+		Scanner scan = new Scanner(System.in);
 
-		FileOutputStream fos = new FileOutputStream("C:\\Users\\anveshg\\Desktop\\Rev.txt");
+		System.out.println("Enter your name here: ");
+		String name = scan.nextLine();
+
+		System.out.println("Enter your age here: ");
+		int age = scan.nextInt();
+
+		/*
+		 * System.out.println("Enter your Id here: "); Double Id =
+		 * scan.nextDouble();
+		 */
+
+		Imple imple = new Imple(name, age);
+
+		FileOutputStream fos = new FileOutputStream("C:\\Users\\anveshg\\Desktop\\Serializable.txt");
 		ObjectOutputStream oos = new ObjectOutputStream(fos);
 
-		oos.writeObject(imple.getAge() + imple.getName() + imple.getId());
-		oos.flush();
-		oos.close();
+		imple.display();
 
 		System.out.println("Success");
 
-		ObjectInputStream in = new ObjectInputStream(new FileInputStream("C:\\Users\\anveshg\\Desktop\\Rev.txt"));
+		oos.writeObject(imple);
+		oos.flush();
+		oos.close();
 
-		Imple imple1 = (Imple) in.readObject();
+		fos.close();
+		scan.close();
 
-		System.out.println(imple1.getName() + "-" + imple1.getAge() + "-" + imple1.getId());
-		
+		ObjectInputStream in = new ObjectInputStream(
+				new FileInputStream("C:\\Users\\anveshg\\Desktop\\Serializable.txt"));
+
+		Imple implem = (Imple) in.readObject();
+
+		System.out.println("Name: " + implem.name + "; Age: " + implem.age + "; Id: " + implem.Id);
+
 		in.close();
+
 	}
 
 }

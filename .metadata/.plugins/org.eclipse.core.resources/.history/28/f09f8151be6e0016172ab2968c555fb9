@@ -1,0 +1,15 @@
+package org.anveshgadde.set;
+
+import java.util.HashSet;
+
+public class SetImple {
+	public static void main(String[] args) {
+		
+		HashSet<String> hs = new HashSet<String>();
+		
+		hs.add("anvesh".substring(0, 1).toUpperCase());
+		hs.add("Kumar".toLowerCase());
+
+	}
+
+}

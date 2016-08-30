@@ -1,0 +1,38 @@
+package org.anveshgadde.date;
+
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class DisplayDate {
+
+	public static void main(String[] args) throws ParseException {
+
+		java.util.Date date = new java.util.Date();
+
+		System.out.println("Date from java.util.date: " + date);
+
+		long millis = System.currentTimeMillis();
+		java.sql.Date date2 = new java.sql.Date(millis);
+
+		System.out.println("Date from java.sql.Date: " + date2);
+
+		Date date3 = java.util.Calendar.getInstance().getTime();
+		System.out.println("Date from calendar: " + date3);
+
+		Date date4 = new Date();
+		String dateToStr = DateFormat.getInstance().format(date4);
+		System.out.println("Formatted date: " + dateToStr);
+
+		Date date5 = new Date();
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd hh:mm:ss");
+		String dateStr = sdf.format(date5);
+		System.out.println("Formatted Date: " + dateStr);
+
+		Date date6 = sdf.parse("2016/08/28 12:01:13");
+		System.out.println("Parsed Date: " + date6);
+
+	}
+
+}

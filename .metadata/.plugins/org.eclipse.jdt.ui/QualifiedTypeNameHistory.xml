@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.util.logging.Logger"/>
-<fullyQualifiedTypeName name="org.apache.hadoop.hive.ql.udf.generic.GenericUDF"/>
-<fullyQualifiedTypeName name="org.slf4j.LoggerFactory"/>
-<fullyQualifiedTypeName name="org.slf4j.Logger"/>
 <fullyQualifiedTypeName name="org.apache.hadoop.io.Text"/>
 <fullyQualifiedTypeName name="org.apache.commons.codec.binary.Base64"/>
 <fullyQualifiedTypeName name="java.util.HashMap"/>
@@ -60,4 +56,8 @@
 <fullyQualifiedTypeName name="java.io.BufferedReader"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.sql.Date"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="java.text.DateFormat"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
 </qualifiedTypeNameHistroy>

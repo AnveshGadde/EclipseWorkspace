@@ -1,0 +1,34 @@
+package org.anveshgadde.date;
+
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class DisplayDate {
+
+	public static void main(String[] args) {
+
+		java.util.Date date = new java.util.Date();
+
+		System.out.println("Date from java.util.date: " + date);
+
+		long millis = System.currentTimeMillis();
+		java.sql.Date date2 = new java.sql.Date(millis);
+
+		System.out.println("Date from java.sql.Date: " + date2);
+
+		Date date3 = java.util.Calendar.getInstance().getTime();
+		System.out.println("Date from calendar: " + date3);
+
+		Date date4 = new Date();
+		String dateToStr = DateFormat.getInstance().format(date4);
+		System.out.println("Formatted date: " + dateToStr);
+
+		Date date5 = new Date();
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd hh:mm");
+		String dateStr = sdf.format(date5);
+		System.out.println("Parsed Date: " + dateStr);
+
+	}
+
+}

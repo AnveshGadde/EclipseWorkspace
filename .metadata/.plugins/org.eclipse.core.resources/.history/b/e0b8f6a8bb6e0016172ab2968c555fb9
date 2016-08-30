@@ -1,0 +1,46 @@
+package org.anveshgadde.listiterator;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.ListIterator;
+
+public class ListItrImple {
+
+	public static void main(String[] args) {
+
+		ArrayList<String> al = new ArrayList<>();
+
+		al.add("Anvesh");
+		al.add(1, "Num 2 virtually First!");
+		al.add("Kumar");
+		al.add("Gadde");
+
+		System.out.println("ArrayList is : " + al);
+		System.out.println(System.lineSeparator());
+
+		Iterator<String> itr = al.iterator();
+
+		System.out.println("Normal iterator starts here.........");
+		System.out.println(System.lineSeparator());
+
+		while (itr.hasNext()) {
+			System.out.println("From Iterator: " + itr.next());
+		}
+
+		System.out.println(System.lineSeparator());
+		System.out.println("Iterator type ended here........");
+		System.out.println(System.lineSeparator());
+
+		ListIterator<String> listItr = al.listIterator();
+
+		System.out.println("Previous boolean value: " + listItr.hasPrevious());
+
+		while (listItr.hasPrevious()) {
+			System.out.println("From bottomTop list iterator: " + listItr.previous());
+		}
+
+		System.out.println("ListIterator type ended here");
+
+	}
+
+}

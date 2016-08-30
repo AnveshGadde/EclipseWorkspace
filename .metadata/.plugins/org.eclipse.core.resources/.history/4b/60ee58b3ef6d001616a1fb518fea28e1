@@ -1,0 +1,57 @@
+package org.anveshgadde.serializationanddeserialization;
+
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
+import java.util.Scanner;
+
+class Imple implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -2300064735847550805L;
+	private String name;
+	private int age;
+	private double Id;
+
+	public Imple(String name, int age, double Id) {
+		this.name = name;
+		this.age = age;
+		this.Id = Id;
+	}
+
+	public void display() {
+		System.out.println("Name: " + name + "; Age: " + age + "; Id: " + Id);
+	}
+}
+
+public class Series {
+
+	public static void main(String[] args) throws Exception {
+
+		Scanner scan = new Scanner(System.in);
+
+		Imple imple = new Imple();
+
+		FileOutputStream fos = new FileOutputStream("C:\\Users\\anveshg\\Desktop\\Rev.txt");
+		ObjectOutputStream oos = new ObjectOutputStream(fos);
+
+		oos.writeObject(imple.getAge() + imple.getName() + imple.getId());
+		oos.flush();
+		oos.close();
+
+		System.out.println("Success");
+
+		ObjectInputStream in = new ObjectInputStream(new FileInputStream("C:\\Users\\anveshg\\Desktop\\Rev.txt"));
+
+		Imple imple1 = (Imple) in.readObject();
+
+		System.out.println(imple1.getName() + "-" + imple1.getAge() + "-" + imple1.getId());
+
+		in.close();
+	}
+
+}

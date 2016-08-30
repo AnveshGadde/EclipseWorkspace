@@ -1,0 +1,31 @@
+package org.anveshgadde.set;
+
+import java.util.HashSet;
+import java.util.LinkedHashSet;
+
+public class SetImple {
+	public static void main(String[] args) {
+
+		HashSet<String> hs = new HashSet<String>();
+
+		hs.add("anvesh".toUpperCase());
+		hs.add("Kumar".toLowerCase());
+		hs.add("gadde".toUpperCase());
+		hs.add("Anvesh");
+
+		System.out.println("HashSet representation: ");
+		System.out.println(hs);
+
+		LinkedHashSet<String> lhs = new LinkedHashSet<String>();
+
+		lhs.add("anvesh".toUpperCase());
+		lhs.add("Kumar".toLowerCase());
+		lhs.add("gadde".toUpperCase());
+		lhs.add("Anvesh");
+
+		System.out.println("HashSet representation: ");
+		System.out.println(lhs);
+
+	}
+
+}

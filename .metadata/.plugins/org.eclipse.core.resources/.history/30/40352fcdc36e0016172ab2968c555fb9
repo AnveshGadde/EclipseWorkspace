@@ -1,0 +1,9 @@
+package org.anveshgadde.priorityqueue;
+
+public class PQImple {
+
+	public static void main(String[] args) {
+
+	}
+
+}

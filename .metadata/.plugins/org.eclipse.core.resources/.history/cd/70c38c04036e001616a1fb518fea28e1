@@ -1,0 +1,9 @@
+package org.anveshgadde.linkedlist;
+
+public class LinkListImple {
+
+	public static void main(String[] args) {
+
+	}
+
+}

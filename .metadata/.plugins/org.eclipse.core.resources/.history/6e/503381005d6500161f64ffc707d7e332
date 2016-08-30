@@ -1,5 +1,0 @@
-package org.anveshgadde.sql;
-
-public enum Environment {
-
-}

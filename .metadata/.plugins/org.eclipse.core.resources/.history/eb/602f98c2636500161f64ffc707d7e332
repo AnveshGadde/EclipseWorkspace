@@ -1,7 +1,0 @@
-package org.anveshgadde.sql;
-
-public class ClipBoardMain {
-	
-	final Properties properties = new Properties();
-
-}

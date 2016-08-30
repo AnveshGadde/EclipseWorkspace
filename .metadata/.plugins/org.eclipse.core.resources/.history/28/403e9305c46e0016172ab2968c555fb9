@@ -1,0 +1,19 @@
+package org.anveshgadde.priorityqueue;
+
+import java.util.PriorityQueue;
+
+public class PQImple {
+
+	public static void main(String[] args) {
+
+		PriorityQueue<String> pq = new PriorityQueue<String>();
+
+		pq.add("Anvesh");
+		pq.add("Kumar");
+		pq.add("Gadde");
+
+		System.out.println("Priority Queue peek element: " + pq.peek());
+
+	}
+
+}
