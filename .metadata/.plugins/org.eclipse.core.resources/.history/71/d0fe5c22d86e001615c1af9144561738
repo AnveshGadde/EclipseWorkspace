@@ -1,0 +1,23 @@
+package org.anveshgadde.properties;
+
+import java.util.Iterator;
+import java.util.Properties;
+import java.util.Set;
+
+public class PropsImple {
+
+	public static void main(String[] args) {
+		
+		Properties properties = System.getProperties();
+		
+		Set propSet = properties.entrySet();
+		
+		Iterator itr = propSet.iterator();
+		
+		while(itr.hasNext()){
+			
+		}
+
+	}
+
+}

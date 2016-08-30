@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Iterator;
 
 public class DupArrItems {
@@ -19,17 +20,23 @@ public class DupArrItems {
 		al2.add("India");
 		al.add("Hyderabad");
 
-		al.addAll(al2);
+		//al.addAll(al2);
+
+		Collections.sort(al);
 
 		Iterator<String> itr = al.iterator();
+
+		System.out.println("After sorting.........");
+		System.out.println(System.lineSeparator());
 
 		while (itr.hasNext()) {
 			System.out.println("From iterator: " + itr.next());
 		}
 
-		for (String str : al) {
-			System.out.println("From for Loop: " + str);
-		}
+		/*
+		 * for (String str : al) { System.out.println("From for Loop: " + str);
+		 * }
+		 */
 
 	}
 }

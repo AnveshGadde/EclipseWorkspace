@@ -1,0 +1,31 @@
+package org.anveshgadde.hashmap;
+
+import java.util.HashMap;
+import java.util.ListIterator;
+import java.util.Map;
+
+public class HashMapImple {
+
+	public static void main(String[] args) {
+
+		HashMap<String, Integer> hmp = new HashMap<String, Integer>();
+
+		hmp.put("one", 1);
+		hmp.put("one", 2);
+		hmp.put("two", 2);
+		hmp.put("three", 3);
+
+		ListIterator<?> itr = (ListIterator<?>)hmp;
+
+		for (Map.Entry me : hmp.entrySet()) {
+			while (itr.hasNext()) {
+				if (itr.previous().equals(itr.next())) {
+					System.out.println("GetValue: " + me.getValue());
+
+				}
+			}
+		}
+
+	}
+
+}

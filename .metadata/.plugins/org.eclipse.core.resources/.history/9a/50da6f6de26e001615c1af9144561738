@@ -1,0 +1,47 @@
+package org.anveshgadde.oracleconnection;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class OracleConn {
+
+	public static void main(String[] args) {
+
+		try {
+
+			// Loading the driver class and specifying class name
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+
+			// Creating the connection object
+			Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@san-dev-ora-03:1521:SANSIT101",
+					"san_dit_rptaggr52_admin", "san_dit_rptaggr52_admin");
+
+			// Creating a statement object to execute
+			Statement stmt = conn.createStatement();
+
+			// Query
+			ResultSet rs = stmt.executeQuery("Select * from deployment Where ID = 105");
+
+			System.out.println("Results deprived from Oracle Database are.......");
+			while (rs.next()) {
+				System.out.println(rs.getInt(0) + " : " + rs.getString(1));
+			}
+
+			conn.close();
+
+		} catch (ClassNotFoundException e) {
+			// System.out.println("Class not found exception failed due to: " +
+			// e.getMessage());
+			e.printStackTrace();
+		} catch (SQLException e) {
+			// System.out.println("SQL exception failed due to: " +
+			// e.getMessage());
+			e.printStackTrace();
+		}
+
+	}
+
+}

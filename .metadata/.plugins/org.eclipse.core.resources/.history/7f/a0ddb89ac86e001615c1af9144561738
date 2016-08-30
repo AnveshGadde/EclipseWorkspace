@@ -1,0 +1,13 @@
+package org.anveshgadde.hashmap;
+
+import java.util.HashMap;
+
+public class HashMapImple {
+
+	public static void main(String[] args) {
+
+		HashMap<String, String> hmp = new HashMap<String, String>();
+
+	}
+
+}

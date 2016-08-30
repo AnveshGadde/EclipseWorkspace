@@ -1,0 +1,23 @@
+package org.anveshgadde.hashmap;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class HashMapImple {
+
+	public static void main(String[] args) {
+
+		HashMap<String, Integer> hmp = new HashMap<String, Integer>();
+
+		hmp.put("one", 1);
+		hmp.put("one", 2);
+		hmp.put("two", 2);
+		hmp.put("three", 3);
+
+		for (Map.Entry me : hmp.entrySet()) {
+			System.out.println("Map value: " + me.getKey() + ":" + me.getValue());
+		}
+
+	}
+
+}

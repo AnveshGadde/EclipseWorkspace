@@ -1,0 +1,38 @@
+package org.anveshgadde.properties;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.Iterator;
+import java.util.Map.Entry;
+import java.util.Properties;
+import java.util.Set;
+
+public class PropsImple {
+
+	public static void main(String[] args) throws FileNotFoundException, IOException {
+
+		Properties properties = System.getProperties();
+
+		Set<Entry<Object, Object>> propSet = properties.entrySet();
+
+		Iterator<Entry<Object, Object>> itr = propSet.iterator();
+		
+		System.out.println("Properties values are..........");
+
+		while (itr.hasNext()) {
+			Entry<Object, Object> entry = itr.next();
+
+			System.out.println(entry.getKey() + " : " + entry.getValue());
+		}
+		
+		Properties prop = new Properties();
+		
+		prop.setProperty("name", "AnveshGadde");
+		prop.put("email", "anveshkumar.gadde@gmail.com");
+		
+		prop.store(new FileOutputStream("C:\\Users\\anveshg\\Desktop\\info.properties"), "propertiesFile");
+
+	}
+
+}
