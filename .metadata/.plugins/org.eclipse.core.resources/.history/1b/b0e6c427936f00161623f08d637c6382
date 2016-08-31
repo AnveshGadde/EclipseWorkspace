@@ -1,0 +1,16 @@
+package org.anveshgadde.palindromecheck;
+
+public class Input {
+	
+	private int number;
+	
+	public Input(int number){
+		this.number = number;
+	}
+	
+	StringBuilder sbr = new StringBuilder(String.valueOf(number));
+	
+	sbr.toString();
+
+	
+}

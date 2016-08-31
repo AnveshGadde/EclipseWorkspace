@@ -1,0 +1,26 @@
+package org.anveshgadde.palindromecheck;
+
+import java.util.Scanner;
+
+public class PaliCheck {
+
+	public static void main(String[] args) {
+
+		System.out.println("Enter the number to check...........");
+
+		Scanner scan = new Scanner(System.in);
+		int numb = scan.nextInt();
+		scan.close();
+
+		StringBuilder sbf = new StringBuilder(String.valueOf(numb));
+
+		System.out.println("After reverse: " + sbf.reverse());
+		System.out.println("Stringed value: " + String.valueOf(numb));
+
+		String result = (sbf.reverse() == String.valueOf(numb)) ? "a Palindrome number"
+				: "Not a palindrome number";
+
+		System.out.println("Entered number " + numb + " is " + result);
+	}
+
+}

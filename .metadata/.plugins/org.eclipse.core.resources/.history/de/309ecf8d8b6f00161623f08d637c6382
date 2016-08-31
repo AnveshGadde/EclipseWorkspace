@@ -1,0 +1,17 @@
+package org.anveshgadde.challenges;
+
+class Input{
+	
+	public Input(){
+		
+	}
+}
+
+
+public class Practice {
+
+	public static void main(String[] args) {
+
+	}
+
+}

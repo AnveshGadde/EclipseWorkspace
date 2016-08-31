@@ -1,0 +1,14 @@
+package org.anveshgadde.primecheck;
+
+
+class Input{
+	private int number;
+}
+
+public class PrimeCheck {
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

@@ -1,0 +1,19 @@
+package org.anveshgadde.palindromecheck;
+
+import java.util.Scanner;
+
+public class PaliCheck {
+
+	public static void main(String[] args) {
+
+		System.out.println("Enter the number to check...........");
+
+		Scanner scan = new Scanner(System.in);
+		int numb = scan.nextInt();
+		scan.close();
+
+		StringBuilder sbf = new StringBuilder(String.valueOf(numb));
+
+	}
+
+}

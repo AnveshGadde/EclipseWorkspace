@@ -1,0 +1,34 @@
+package org.anveshgadde.primecheck;
+
+import java.util.Scanner;
+
+class Input {
+
+	private int number;
+
+	public Input(int number) {
+		this.number = number;
+	}
+
+	public void result() {
+		
+		for(int i : (number/2)){
+			
+		}
+	}
+}
+
+public class PrimeCheck {
+
+	public static void main(String[] args) {
+
+		System.out.println("Please enter the number to check...............");
+		Scanner console = new Scanner(System.in);
+		int number = console.nextInt();
+
+		Input in = new Input(number);
+
+		in.result();
+		console.close();
+	}
+}

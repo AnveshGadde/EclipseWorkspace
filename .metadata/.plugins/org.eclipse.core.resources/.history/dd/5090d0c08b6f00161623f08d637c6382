@@ -1,0 +1,22 @@
+package org.anveshgadde.challenges;
+
+class Input {
+
+	private int number;
+
+	public Input(int number) {
+		this.number = number;
+	}
+	
+	public  display{
+		System.out.println("The number "+number+ " is even!");
+	}
+}
+
+public class Practice {
+
+	public static void main(String[] args) {
+
+	}
+
+}

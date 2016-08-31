@@ -1,0 +1,22 @@
+package org.anveshgadde.challenges;
+
+class Input {
+
+	private int number;
+
+	public Input(int number) {
+		this.number = number;
+	}
+	
+	void display{
+		
+	}
+}
+
+public class Practice {
+
+	public static void main(String[] args) {
+
+	}
+
+}

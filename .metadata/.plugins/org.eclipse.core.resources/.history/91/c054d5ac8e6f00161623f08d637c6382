@@ -1,0 +1,28 @@
+package org.anveshgadde.primecheck;
+
+class Input {
+
+	private int number;
+
+	public Input(int number) {
+		this.number = number;
+	}
+
+	public void result() {
+		String result;
+
+		for (int i = 0; i <= number / 2; i++) {
+			result = (number % i == 0) ? "Prime" : "Not a Prime";
+		}
+
+		System.out.println("Input " + number + " is " + result);
+	}
+}
+
+public class PrimeCheck {
+
+	public static void main(String[] args) {
+
+	}
+
+}

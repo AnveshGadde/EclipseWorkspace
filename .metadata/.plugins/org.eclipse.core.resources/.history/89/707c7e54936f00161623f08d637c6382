@@ -1,0 +1,13 @@
+package org.anveshgadde.palindromecheck;
+
+public class PaliCheck {
+	
+	public static void main(String[] args) {
+		
+		int numb = 5;
+		
+		StringBuilder sbf = new StringBuilder(String.valueOf(numb));
+		
+	}
+
+}

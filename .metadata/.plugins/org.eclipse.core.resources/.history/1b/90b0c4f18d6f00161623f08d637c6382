@@ -1,0 +1,14 @@
+package org.anveshgadde.challenges;
+
+
+class Input{
+	
+}
+
+public class PrimeCheck {
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

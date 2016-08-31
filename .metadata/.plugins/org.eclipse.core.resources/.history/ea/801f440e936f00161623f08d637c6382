@@ -1,0 +1,10 @@
+package org.anveshgadde.palindromecheck;
+
+public class PaliCheck {
+	
+	public static void main(String[] args) {
+		StringBuilder sbf = new StringBuilder();
+		
+	}
+
+}

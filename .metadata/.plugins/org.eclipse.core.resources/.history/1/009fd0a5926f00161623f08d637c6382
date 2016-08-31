@@ -1,0 +1,7 @@
+package org.anveshgadde.palindromecheck;
+
+public class Input {
+	
+	private int number;
+
+}
